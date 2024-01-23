@@ -1,0 +1,116 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 添加盒子模型 */
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    line-height: 0.75;
+    letter-spacing: 0.5px;
+}
+
+/* header 样式 */
+header {
+    background-color: black; /* 黑色背景 */
+    color: white; /* 白色字体 */
+    padding: 10px 0; /* 上下填充 */
+    position: fixed; /* 固定在顶部 */
+    width: 100%; /* 宽度为全屏 */
+    top: 0; /* 顶部对齐 */
+    left: 0; /* 左对齐 */
+    z-index: 1000; /* 确保在最上层 */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav p a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* 两侧间距 */
+}
+
+/* flex-container 样式 */
+.flex-container {
+    background-image: url('Images/Backgroud.png'); /* 设置背景图片 */
+    background-size: cover; /* 背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    padding: 20px; /* 增加一些内边距 */
+    text-align: center; /* 文本左对齐 */
+    overflow: auto; /* 内容过多时允许滚动 */
+    height: auto; /* 设置高度为自动，这样就能根据内容自动调整 */
+    min-height: calc(100vh - 120px); /* 设置最小高度以保证小内容时也能覆盖全屏 */
+    padding-bottom: 40px; /* 底部填充，保证内容与 footer 之间没有空隙 */
+}
+
+/* 链接样式 */
+.flex-container main p a {
+    color: rgba(0, 0, 0, 0.1); /* 几乎透明的文本颜色 */
+    margin: 8px 0; /* 增加链接之间的间隔 */
+    background-color: transparent; /* 使链接背景透明 */
+    transition: background-color 0.3s, color 0.3s; /* 平滑过渡效果 */
+    text-decoration: none; /* 移除下划线 */
+    padding: 5px; /* 链接四周填充 */
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 水平居中文本 */
+    width: 100%; /* 设置宽度为 100% */
+    padding: 10px 0; /* 设置上下填充，左右不变 */
+    
+}
+
+/* 链接鼠标悬停效果 */
+.flex-container main p a:hover {
+    color: white; /* 链接文本颜色变为白色 */
+    background-color: black; /* 链接背景颜色变为黑色 */
+    /* 移除 transform 和 box-shadow，因为不再需要 */
+    width: 100%; /* 确保背景色覆盖整个宽度 */
+    padding: 10px 0; /* 保持上下填充 */
+}
+
+/* 响应式布局调整 */
+@media (max-width: 600px) {
+    .flex-container main p a {
+        padding: 8px; /* 在小屏幕上增加填充 */
+        margin: 10px 0; /* 增加更多间隔 */
+    }
+}
+
+/* footer 样式 */
+footer {
+    background-color: black; /* 黑色背景 */
+    color: white; /* 白色字体 */
+    text-align: center;
+    position: fixed; /* 固定在底部 */
+    width: 100%; /* 宽度为全屏 */
+    bottom: 0; /* 底部对齐 */
+    left: 0; /* 左对齐 */
+    z-index: 1000; /* 确保在最上层 */
+    height: 40px; /* 设置 footer 的高度 */
+}
+
+footer p {
+    padding: 10px 0; /* 上下填充 */
+}
+
+/* 其他样式 */
+a:hover {
+    opacity: 1; /* 鼠标悬停时的样式 */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

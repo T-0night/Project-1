@@ -8,7 +8,7 @@ function resetRow(row) {
 }
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
     var icon = document.querySelector('.icon');
     if (!icon) {
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".navbar").appendChild(icon);
     }
 
-    icon.addEventListener("click", function() {
+    icon.addEventListener("click", function () {
         var menu = document.querySelector(".menu");
         if (menu.style.display === "flex" || menu.style.display === "") {
             menu.style.display = "none";
@@ -26,4 +26,20 @@ document.addEventListener("DOMContentLoaded", function() {
             menu.style.display = "flex";
         }
     });
+});
+
+document.addEventListener('mousemove', function (e) {
+    // var x = e.clientX;
+    var y = e.clientY;
+    // var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    // Map the mouse position to a range of 0-255 for RGB values
+    var red = Math.round((y / height) * 130 + 100);
+
+    // var blue = Math.round((y / height) * 255);
+
+    // Set the background color
+    document.h2.style.backgroundColor = `rgb(${red}, 220, 110)`;
+    // r: 100-230, diff: 130
 });

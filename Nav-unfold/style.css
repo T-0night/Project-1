@@ -1,0 +1,56 @@
+/* 基础样式 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* 默认情况下显示 */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 15px;
+}
+
+.menu li a .current {
+    border-bottom: 2px solid #000;
+}
+
+/* "+"按钮样式，初始状态隐藏 */
+.icon {
+    display: none;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 840px) {
+    .menu {
+        display: none; /* 确保初始状态下菜单是隐藏的 */
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 30px;
+    }
+}

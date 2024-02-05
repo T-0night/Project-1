@@ -14,6 +14,10 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 .leftbar {
     position: fixed;
     top: 0;
@@ -65,16 +69,30 @@ nav .menu {
 
 nav .menu li a {
     color: #fff;
-    text-decoration: none;
+    
     margin: 0 10px;
     font-size: 13px;
 }
 
-.current {
+nav .menu .current {
     color: yellow;
     /* Changes the text color to yellow */
     text-decoration: line-through;
     /* Adds a line through the text */
+}
+
+nav .menu .sub {
+    color: rgb(255, 255, 0, 0.7);
+    /* Changes the text color to yellow */
+    font-size: 12px;
+}
+
+.icon {
+    display: none;
+    margin: 0 10px;
+    font-size: 13px;
+    color: yellow;
+    text-decoration: none;
 }
 
 .main-content {
@@ -115,7 +133,15 @@ section h4 {
     margin-bottom: 10px;
 }
 
-section .line {
+section h5 {
+    font-family: 'handjet', 'Courier New', Courier, monospace;
+    font-size: 64px;
+    color: #D3F4FF;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+.line {
     width: 100%;
     height: 1px;
     background-color: white;
@@ -130,6 +156,22 @@ section .Note {
     font-size: 14px;
     color: #c2c2c2;
 }
+
+
+.footer {
+    text-align: center;
+    width: 100%; /* 宽度为全屏 */
+    padding-bottom: 50px;
+    font-size: 12px;
+}
+
+.footer .line{
+    height: 0.5px;
+    margin-bottom: 15px;
+}
+
+
+/* Home Page */
 
 #Home {
     background-image: url('Images/Backgroud.jpg');
@@ -306,6 +348,9 @@ section .Note {
     text-decoration: none;
 }
 
+
+/* Resources Page*/
+
 .row {
     background-color: #000000;
     padding: 20px;
@@ -343,6 +388,22 @@ section .Note {
     margin-right: 10px;
 }
 
+/* About Page */
+#About {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+}
+#About #highlight {
+    color:#FAF8BC;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+
+
+/* responsive design */
 
 @media (max-width: 599px) {}
 
@@ -358,6 +419,30 @@ section .Note {
     padding-top: 50px;
     /* Add some space at the top */
   }
+
+  .menu {
+    display: none; /* 确保初始状态下菜单是隐藏的 */
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    background-color: rgba(255, 249, 186, 0.2);
+    z-index: 1;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.icon {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+}
 
   #AIDream {
     display: grid;
@@ -392,7 +477,7 @@ section .Note {
     grid-template-columns: 1fr;
   }
   #How .secondrow .image-container {
-    padding-left: 50%;
+    padding-right: 50%;
 }
 }
 
@@ -403,3 +488,5 @@ section .Note {
 @media (min-width: 1200px) {
 
 }
+
+

@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #004400; /* Assume this is the dark green color */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #00cc00; /* Assume this is the light green color */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .nav-link, .scroll-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .row {
+    background-color: #00cc00; /* Light green background */
+    padding: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .row:hover {
+    background-color: #654321; /* Dark brown color on hover */
+  }
+  
+  .link-tag, .date {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      justify-content: center;
+    }
+  
+    .nav-link, .scroll-link {
+      margin: 10px;
+    }
+  }
+  

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.leftbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 100;
+}
+
+.leftbar .title img {
+    max-width: 42px;
+    height: auto;
+    display: block;
+    padding-top: 50px;
+}
+
+.leftbar .image-container img {
+    width: auto;
+    max-height: 60vh;
+    display: block;
+    padding-top: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    /* 从左侧边栏的右侧开始 */
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    /* 为导航栏右侧添加一些内边距 */
+    box-sizing: border-box;
+    word-spacing: -2px;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+nav .menu li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.current {
+    color: yellow; /* Changes the text color to yellow */
+    text-decoration: line-through; /* Adds a line through the text */
+  }
+
+.main-content {
+    margin-left: 100px;
+    /* 为左侧边栏留出空间 */
+    padding: 120px 20px 20px 20px;
+    /* 上方留出足够空间以避免与固定导航栏重叠 */
+}
+
+section {
+    margin-bottom: 20px;
+    width: 100vw-50px;
+    /* 为左侧边栏留出空间 */
+    height: 100vh;
+
+}
+
+section h2 {
+    font-family: 'handjet', 'Courier New', Courier, monospace;
+    font-size: 64px;
+    color: #FAF8BC;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+section h3 {
+    font-family: 'handjet', 'Courier New', Courier, monospace;
+    font-size: 48px;
+    color: #FAF8BC;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+section h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+section .line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+section .space {
+    margin-bottom: 30px;
+}
+
+section .Note {
+    font-size: 14px;
+    color: #c2c2c2;
+}
+
+#Home {
+    background-image: url('Images/Backgroud.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+#Home img {
+    display: block;
+    top: 87%;
+    left: 50%;
+    position: absolute;
+    bottom: 40px;
+    height: 50px;
+}
+
+#AIDream {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: end;
+}
+
+#AIDream .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#AIDream .text-content {
+    padding-bottom: 10%;
+    /* 根据需要调整值 */
+    padding-right: 30%;
+    /* 根据需要调整值 */
+    max-width: 100%;
+
+}
+
+#What {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+}
+
+#What .image-container img {
+    width: 60%;
+    height: auto;
+    padding-bottom: 15%;
+}
+
+#What .text-content {
+    padding-bottom: 20%;
+    /* 根据需要调整值 */
+    padding-left: 45%;
+    /* 根据需要调整值 */
+    padding-right: 15%;
+}
+
+#How {
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+    align-items: center;
+}
+
+#How .firstrow {
+    display: grid;
+    grid-template-columns: 3fr 1fr 7fr;
+    gap: 20px;
+}
+
+#How .firstrow .text1 {
+    padding-left: 60%;
+    padding-top: 80%;
+}
+
+#How .firstrow .image-container {
+    padding-top: 60%;
+    align-items: center;
+}
+
+#How .firstrow .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#How .firstrow .text2 {
+    padding-top: 32%;
+    align-items: start;
+    padding-right: 25%;
+}
+
+#How .secondrow {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+#How .secondrow .text3 {
+    padding-top: 10%;
+    /* 根据需要调整值 */
+    padding-left: 22%;
+    /* 根据需要调整值 */
+}
+
+#How .secondrow .image-container {
+    align-items: start;
+}
+
+#How .secondrow .image-container img {
+    height: 60%;
+    width: auto;
+}
+
+#Symbolic {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 0px;
+    align-items: end;
+}
+
+#Symbolic .image-container img {
+    width: 90%;
+    height: auto;
+    padding-bottom: 10%;
+    padding-right: 10%;
+}
+
+#Symbolic .text-content {
+    padding-bottom: 10%;
+    /* 根据需要调整值 */
+    padding-left: 30%;
+    /* 根据需要调整值 */
+}
+
+#Symbolic .important-note{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+#Symbolic .important-note img {
+    width: 50%;
+    height: auto;
+}
+
+#Neural {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 20px;
+    align-items: end;
+}
+
+#Neural .text-content {
+    padding-bottom: 15%;
+    /* 根据需要调整值 */
+    padding-right: 25%;
+    /* 根据需要调整值 */
+}
+
+#Neural .important-note{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+#Neural .important-note img {
+    width: 50%;
+    height: auto;
+}
+
+
+#Neuralimg img {
+    width: 90%;
+    height: auto;
+    padding-left: 10%;
+}
+
+.button a {
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    color: #fff;
+    background: black;
+    padding: 7px 12px;
+    text-decoration: none;
+}

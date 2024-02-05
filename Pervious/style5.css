@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 添加盒子模型 */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 1fr 2fr 2fr 1fr/ 1fr 2fr 1fr;
+}
+
+.grid-item {
+    display: grid;
+    background-color: skyblue;
+
+}
+
+.header {
+    grid-area: 1 / 1 / 1 / 5;
+}
+
+.right-bar {
+    grid-area: 2 / 1 /4 / 1;
+    background-color: aquamarine;
+}
+
+.left-bar {
+    grid-area: 2 / 4 /4 / 4;
+    background-color: black;
+}
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #00cc00; /* Assume this is the light green color */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .nav-link, .scroll-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .row {
+    background-color: #00cc00; /* Light green background */
+    padding: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .row:hover {
+    background-color: #654321; /* Dark brown color on hover */
+  }
+  
+  .link-tag, .date {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      justify-content: center;
+    }
+  
+    .nav-link, .scroll-link {
+      margin: 10px;
+    }
+  }
+  

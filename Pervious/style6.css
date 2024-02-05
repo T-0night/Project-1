@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+.leftbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  /* 调整为实际图片宽度 */
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 水平居中对齐 */
+  justify-content: flex-start;
+  /* 从顶部开始排列 */
+  padding: 0;
+  /* 移除内边距 */
+  margin-left: 1.5vw;
+}
+
+.leftbar .title img {
+  max-width: 42px;
+  /* Set the maximum width to 100% of the parent */
+  height: auto;
+  display: block;
+  /* 阻止图片默认的inline特性 */
+  padding-top: 50px;
+  /* Add some space at the top */
+}
+
+.leftbar .image-container img {
+  width: auto;
+  max-height: 60vh;
+  /* 高度自动，保持宽高比 */
+  display: block;
+  /* 阻止图片默认的inline特性 */
+  padding-top: 20px;
+  /* Add some space at the top */
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
+nav .navbar {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  max-width: 90%;
+  margin: auto;
+  font-family: 'Courier New', Courier, monospace;
+  word-spacing: -2px;
+}
+
+nav .navbar .menu {
+  display: flex;
+}
+
+.navbar .menu li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 13px;
+  /* font-weight: 500; */
+  text-decoration: none;
+}
+
+.main-content {
+  padding-left: 80px;
+  padding-right: 10vw;
+}
+
+/* Adjust the section to take full viewport width and center the content */
+section {
+  background-size: cover;
+  /* 或 contain 根据需要选择 */
+  background-position: center center;
+  /* 背景图像居中 */
+  background-repeat: no-repeat;
+  /* 不重复背景图 */
+  height: 100vh;
+  /* Full height of the viewport */
+  width: 100vw;
+  /* Full width of the viewport */
+  padding: 0;
+  margin: 0;
+}
+
+#Home {
+  background-image: url('Images/Backgroud.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-size: contain;
+  background-position: center center;
+}
+
+
+#Home img {
+  display: block;
+  top: 87%;
+  left: 50%;
+  position: absolute;
+  bottom: 40px;
+  height: 50px;
+}
+
+
+
+#AIDream {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 创建两列，每列占用可用空间的一半 */
+  align-items: center;
+  /* 垂直居中对齐网格项 */
+  gap: 20px;
+  /* 在网格项之间添加一些间隙 */
+  color: #fff;
+  padding: 10px;
+  /* 根据需要添加内边距 */
+}
+
+#AIDream .grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* 让两列有相同的宽度 */
+  align-items: start;
+  /* 如果需要的话，可以使内容顶部对齐 */
+  grid-gap: 20px;
+}
+
+#AIDream .image-container{
+  max-width: 100%;
+}
+
+#AIDream .text-content {
+  max-width: 60%;
+}
+
+/* 可能还需要调整图片的样式，以确保它不会超出其容器 */
+#AIDream .image-container img {
+  width: 100%;
+  /* 使图片宽度适应其容器 */
+  height: auto;
+  /* 保持图片的原始宽高比 */
+}
+
+@media (max-width: 599px) {}
+
+@media (min-width: 600px) and (max-width: 799px) {}
+
+@media (max-width: 840px) {
+  .leftbar .title img {
+    max-width: 5vw;
+    /* Set the maximum width to 100% of the parent */
+    height: auto;
+    display: block;
+    /* 阻止图片默认的inline特性 */
+    padding-top: 50px;
+    /* Add some space at the top */
+  }
+
+  #AIDream {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 841px) and(max-width: 999px) {
+  #AIDream {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}
+
+.button a {
+  position: fixed;
+  bottom: 25px;
+  right: 35px;
+  padding: 7px 12px;
+  color: #fff;
+  background: black;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+}

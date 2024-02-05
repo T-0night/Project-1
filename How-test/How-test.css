@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: black; /* 背景颜色 */
+    color: #fff; /* 字体颜色 */
+    font-family: 'Your-Font-Family'; /* 选择适合的字体 */
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: space-evenly; /* 水平间距相等 */
+    padding: 50px; /* 或者任何你需要的内边距 */
+  }
+  
+  .question-mark {
+    background: url('path-to-your-question-mark-image.png') no-repeat center center;
+    background-size: contain;
+    width: 50px; /* 适当的大小 */
+    height: 50px; /* 适当的大小 */
+  }
+  
+  .text-block {
+    max-width: 600px; /* 或者根据需要调整 */
+    text-align: left; /* 文本对齐 */
+  }
+  
+  .lead-text {
+    font-size: 1.2em; /* 适当的大小 */
+  }
+  
+  .text-block h1 {
+    font-size: 2em; /* 适当的大小 */
+    /* 可以添加像 text-shadow 的样式来创建更接近的视觉效果 */
+  }
+  
+  .follow-up-text {
+    font-size: 1em; /* 适当的大小 */
+  }
+  
+  .dotted-line {
+    border-left: 2px dashed #fff; /* 虚线 */
+    height: 100px; /* 根据需要调整 */
+  }
+  

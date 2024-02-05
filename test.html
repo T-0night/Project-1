@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Row Highlight on Hover</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#" class="nav-link">Projects</a>
+                <a href="#" class="nav-link">Info</a>
+                <a href="#" class="nav-link">Email</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="row" onmouseover="highlightRow(this)" onmouseout="resetRow(this)">
+                <div class="link-tag">PRESS</div>
+                <div class="date">JUNE 2022</div>
+                <p>I was a named 2022 finalist for the internationally-recognized Wheelwright Prize, presented and
+                    funded by the Harvard Graduate School of Design.</p>
+            </div>
+            <!-- Repeat for other rows -->
+        </main>
+
+        <footer>
+            <a href="#" class="scroll-link">Keep Scrolling</a>
+        </footer>
+    </div>
+
+    <script>
+        function highlightRow(row) {
+            row.style.backgroundColor = '#654321'; // Use the dark brown color you want
+        }
+
+        function resetRow(row) {
+            row.style.backgroundColor = ''; // Reset to original color
+        }
+    </script>
+
+</body>
+
+</html>

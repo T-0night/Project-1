@@ -1,0 +1,187 @@
+/* Home Page */
+
+.rotateimg {
+    transition: transform 0.2s;
+    /* 平滑转动效果 */
+}
+
+#Home {
+    opacity: 0;
+    /* 开始时不可见 */
+    transform: translateY(-60px);
+    /* 从上方开始 */
+    transition: opacity 3s ease, transform 2s ease;
+    /* 动画持续时间和效果 */
+    background-image: url('Images/Backgroud.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#Home img {
+    display: block;
+    top: 87%;
+    left: 50%;
+    position: absolute;
+    bottom: 40px;
+    height: 50px;
+}
+
+#AIDream {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: end;
+}
+
+#AIDream .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#AIDream .text-content {
+    padding-bottom: 10%;
+    padding-right: 30%;
+    max-width: 100%;
+}
+
+#What {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+}
+
+#What .image-container img {
+    width: 60%;
+    height: auto;
+    padding-bottom: 15%;
+}
+
+#What .text-content {
+    padding-bottom: 20%;
+    padding-left: 45%;
+    padding-right: 15%;
+}
+
+#How {
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+    align-items: center;
+}
+
+#How .firstrow {
+    display: grid;
+    grid-template-columns: 3fr 1fr 7fr;
+    gap: 20px;
+}
+
+#How .firstrow .text1 {
+    padding-left: 60%;
+    padding-top: 80%;
+}
+
+#How .firstrow .image-container {
+    padding-top: 60%;
+    align-items: center;
+}
+
+#How .firstrow .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#How .firstrow .text2 {
+    padding-top: 32%;
+    align-items: start;
+    padding-right: 25%;
+}
+
+#How .secondrow {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+#How .secondrow .text3 {
+    padding-top: 10%;
+    padding-left: 22%;
+}
+
+#How .secondrow .image-container {
+    align-items: start;
+}
+
+#How .secondrow .image-container img {
+    height: 60%;
+    width: auto;
+}
+
+#Symbolic {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 0px;
+    align-items: end;
+}
+
+#Symbolic .image-container img {
+    width: 90%;
+    height: auto;
+    padding-bottom: 10%;
+    padding-right: 10%;
+}
+
+#Symbolic .text-content {
+    padding-bottom: 10%;
+    padding-left: 30%;
+}
+
+#Symbolic .important-note {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+#Symbolic .important-note img {
+    width: 50%;
+    height: auto;
+}
+
+#Neural {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 20px;
+    align-items: end;
+}
+
+#Neural .text-content {
+    padding-bottom: 15%;
+    padding-right: 25%;
+}
+
+#Neural .important-note {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+#Neural .important-note img {
+    width: 50%;
+    height: auto;
+}
+
+#Neuralimg img {
+    width: 90%;
+    height: auto;
+    padding-left: 10%;
+}
+
+.button a {
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    color: #fff;
+    background: black;
+    padding: 7px 12px;
+    text-decoration: none;
+}

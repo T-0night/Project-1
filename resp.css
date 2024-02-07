@@ -1,0 +1,184 @@
+
+@media (max-width: 599px) {}
+
+@media (min-width: 600px) and (max-width: 799px) {}
+
+@media (max-width: 840px) {
+    .leftbar .title img {
+        max-width: 5vw;
+        /* Set the maximum width to 100% of the parent */
+        height: auto;
+        display: block;
+        /* 阻止图片默认的inline特性 */
+        padding-top: 50px;
+        /* Add some space at the top */
+    }
+
+    .menu {
+        display: none;
+        /* 确保初始状态下菜单是隐藏的 */
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+        background-color: rgba(255, 249, 186, 0.2);
+        z-index: 1;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    nav .menu li a {
+        font-size: 13px;
+    }
+
+    nav .menu .sub {
+
+        font-size: 11px;
+    }
+
+    .icon {
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 30px;
+    }
+
+    section h2 {
+
+        font-size: 48px;
+    }
+
+    section h3 {
+        font-size: 32px;
+    }
+
+    section h4 {
+        font-size: 12px;
+    }
+
+    section h5 {
+        font-size: 48px;
+    }
+
+    section .Note {
+        font-size: 10px;
+    }
+
+    .footer {
+
+        font-size: 8px;
+    }
+
+    #AIDream {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #AIDream .text-content {
+        padding-bottom: 0%;
+        padding-right: 5%;
+        padding-left: 5%;
+        max-width: 100%;
+    }
+
+    #What {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #What .image-container img {
+        width: 60%;
+        height: auto;
+        padding-bottom: 15%;
+    }
+
+    #What .text-content {
+        padding-bottom: 0%;
+        padding-left: 25%;
+        padding-right: 5%;
+    }
+
+    #How .firstrow .text1 {
+        padding-left: 0%;
+        padding-top: 80%;
+    }
+
+    #How .firstrow .text2 {
+        padding-top: 32%;
+        align-items: start;
+        padding-right: 5%;
+    }
+
+    #How .secondrow {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #How .secondrow .text3 {
+        padding-top: 5%;
+        padding-left: 0%;
+    }
+
+    #How .secondrow .image-container {
+        padding-left: 50%;
+    }
+
+    #Symbolic {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #Neural {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 70vh;
+    }
+
+    #Neural .space {
+        display: none;
+    }
+
+    #Neural .text-content {
+        padding-top: 0%;
+        /* padding-bottom: 15%; */
+        padding-right: 25%;
+    }
+
+    #Neuralimg {
+        height: 50vh;
+    }
+
+}
+
+@media (min-width: 841px) and(max-width: 999px) {
+    #AIDream {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #What {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #How .secondrow {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #How .secondrow .image-container {
+        padding-right: 50%;
+    }
+
+
+}
+

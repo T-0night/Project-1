@@ -1,0 +1,15 @@
+/* About Page */
+#About {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+}
+
+#About #highlight {
+    color: #FAF8BC;
+    font-size: 19px;
+    font-weight: bolder;
+}
+

@@ -1,0 +1,47 @@
+/* Resources Page*/
+
+
+nav .menu .colormode {
+    color: rgb(255, 255, 255);
+    /* text-decoration: underline; */
+    border: 2px solid #ffffff; 
+    /* Adds a line through the text */
+}
+
+#Links{
+    height: 80vh;
+}
+
+.row {
+    background-color: #000000;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    /* 使用 flex 布局 */
+    flex-direction: column;
+    /* 子元素垂直排列 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+    /* 水平居中 */
+    text-align: center;
+    /* 文本居中对齐 */
+}
+
+.row p {
+    align-items: center;
+}
+
+.row a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.link-tag,
+.date {
+    display: inline-block;
+    margin-right: 10px;
+}

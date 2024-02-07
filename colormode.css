@@ -1,0 +1,56 @@
+/* Color mode */
+
+.rowcolor {
+    background-color: #000000;
+    padding: 10px;
+    margin: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    /* 使用 flex 布局 */
+    flex-direction: column;
+    /* 子元素垂直排列 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+    /* 水平居中 */
+    text-align: center;
+    /* 文本居中对齐 */
+}
+
+.rowcolor p {
+    align-items: center;
+}
+
+.rowcolor a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+#clearColors{
+    background-color: transparent;
+    /* text-decoration: underline; */
+    border: 2px solid white; 
+    /* Adds a line through the text */
+    font-size: 12px;
+    color:white;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase ;
+}
+
+nav .menu .currentcolormode {
+    color: yellow;
+    /* Changes the text color to yellow */
+    text-decoration: line-through;
+    /* Adds a line through the text */
+    /* text-decoration: underline; */
+    border: 2px solid yellow; /* 黑色边框 */
+    /* Adds a line through the text */
+}
